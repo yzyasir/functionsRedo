@@ -61,24 +61,45 @@ function lengthValue(input1, input2){
 // console.log(lengthValue(4,7));
 // console.log(lengthValue(6,2));
 
-// For Loop Basic II
 
+// For Loop Basic II
 // 1)
 // Biggie Size - Given a list, write a function that changes all positive numbers in the list to "big".
 // Example: biggie_size([-1, 3, 5, -5]) returns that same list, but whose values are now [-1, "big", "big", -5]
-
+function biggestSize(arrayPrime){
+    var newArray = [];
+    for (i=0; i<0; i++){
+        if(arrayPrime[i] <= 0){
+            newArray.push(arrayPrime[i]);
+        }
+        else{
+            newArray[i]="big";
+        }
+    }
+    return newArray;
+}
+// console.log(biggestSize([-1, 3, 5, -5]))
 
 // 2)
 // Count Positives - Given a list of numbers, create a function to replace the last value with the number of positive values. (Note that zero is not considered to be a positive number).
 // Example: count_positives([-1,1,1,1]) changes the original list to [-1,1,1,3] and returns it
 // Example: count_positives([1,6,-4,-2,-7,-2]) changes the list to [1,6,-4,-2,-7,2] and returns it
-
+function countPositives(){
+    
+}
 
 // 3) 
 // Sum Total - Create a function that takes a list and returns the sum of all the values in the list.
 // Example: sum_total([1,2,3,4]) should return 10
 // Example: sum_total([6,3,-2]) should return 7
-
+function total(input){
+    var totalSum = 0;
+    for (i=0; i<input.lenth; i++){
+        totalSum + input[i]; 
+    }
+    return totalSum;
+}
+console.log(total([1,2,3,4]));
 
 // 4)
 // Average - Create a function that takes a list and returns the average of all the values.x
