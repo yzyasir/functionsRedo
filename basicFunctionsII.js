@@ -85,19 +85,26 @@ function biggestSize(arrayPrime){
     }
     return newArray;
 }
-console.log(biggestSize([-1, 3, 5, -5]))
+// console.log(biggestSize([-1, 3, 5, -5]))
 
 // 2) Stuck
 // Count Positives - Given a list of numbers, create a function to replace the last value with the number of positive values. (Note that zero is not considered to be a positive number).
 // Example: count_positives([-1,1,1,1]) changes the original list to [-1,1,1,3] and returns it
 // Example: count_positives([1,6,-4,-2,-7,-2]) changes the list to [1,6,-4,-2,-7,2] and returns it
 function countPositives(arrayInput){
+    var counter = 0;
+    var newArray = [];
     for(i=0; i<arrayInput.length; i++){
-        
+        if(arrayInput[i]>0){
+            counter ++;
+            newArray.push(arrayInput[i]);
+
+        }
     }
 }
+// console.log(countPositives([-1,1,1,1]))
 
-// 3) Stuck
+// 3) CORRECT
 // Sum Total - Create a function that takes a list and returns the sum of all the values in the list.
 // Example: sum_total([1,2,3,4]) should return 10
 // Example: sum_total([6,3,-2]) should return 7
@@ -105,17 +112,28 @@ function total(input){
     var totalSum = 0;
     for (i=0; i<input.length; i++){
         console.log(input[i])
-        totalSum + input[i]; 
+        totalSum += input[i]; // To add, its not +, it is +=
         console.log(totalSum)
     }
     return totalSum;
 }
-// console.log(total([1, 2, 3]));
+// console.log(total([5, 2, 7]));
 
-// 4) Not Started
+// 4) CORRECT
 // Average - Create a function that takes a list and returns the average of all the values.
 // Example: average([1,2,3,4]) should return 2.5
-
+function averageMaker(arrayInput){
+    var sum = 0;
+    var average;
+    // console.log(arrayInput.length)
+    for(i=0; i<arrayInput.length; i++){
+        sum += arrayInput[i];
+    }
+    // console.log(sum)
+    average = sum / arrayInput.length; //% is just finding the remainder
+    return average
+}
+// console.log(averageMaker([1,2,3,4]));
 
 // 5) CORRECT
 // Length - Create a function that takes a list and returns the length of the list. 
@@ -130,6 +148,11 @@ function lengthCount(arrayInput){
 // Minimum - Create a function that takes a list of numbers and returns the minimum value in the list. If the list is empty, have the function return False.
 // Example: minimum([37,2,1,-9]) should return -9
 // Example: minimum([]) should return False
+function minimum(arrayInput){
+    for(i=0; i<arrayInput.length; i++){
+       
+    }
+}
 
 
 // 7)
