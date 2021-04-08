@@ -62,55 +62,69 @@ function lengthValue(input1, input2){
 // console.log(lengthValue(6,2));
 
 
-// For Loop Basic II
-// 1)
+
+
+
+
+
+
+
+// FOR BASIC LOOP II
+// 1) CORRECT
 // Biggie Size - Given a list, write a function that changes all positive numbers in the list to "big".
 // Example: biggie_size([-1, 3, 5, -5]) returns that same list, but whose values are now [-1, "big", "big", -5]
 function biggestSize(arrayPrime){
     var newArray = [];
-    for (i=0; i<0; i++){
+    for (i=0; i<arrayPrime.length; i++){
         if(arrayPrime[i] <= 0){
             newArray.push(arrayPrime[i]);
         }
         else{
-            newArray[i]="big";
+            newArray[i]=("big");
         }
     }
     return newArray;
 }
-// console.log(biggestSize([-1, 3, 5, -5]))
+console.log(biggestSize([-1, 3, 5, -5]))
 
-// 2)
+// 2) Stuck
 // Count Positives - Given a list of numbers, create a function to replace the last value with the number of positive values. (Note that zero is not considered to be a positive number).
 // Example: count_positives([-1,1,1,1]) changes the original list to [-1,1,1,3] and returns it
 // Example: count_positives([1,6,-4,-2,-7,-2]) changes the list to [1,6,-4,-2,-7,2] and returns it
-function countPositives(){
-    
+function countPositives(arrayInput){
+    for(i=0; i<arrayInput.length; i++){
+        
+    }
 }
 
-// 3) 
+// 3) Stuck
 // Sum Total - Create a function that takes a list and returns the sum of all the values in the list.
 // Example: sum_total([1,2,3,4]) should return 10
 // Example: sum_total([6,3,-2]) should return 7
 function total(input){
     var totalSum = 0;
-    for (i=0; i<input.lenth; i++){
+    for (i=0; i<input.length; i++){
+        console.log(input[i])
         totalSum + input[i]; 
+        console.log(totalSum)
     }
     return totalSum;
 }
-console.log(total([1,2,3,4]));
+// console.log(total([1, 2, 3]));
 
-// 4)
-// Average - Create a function that takes a list and returns the average of all the values.x
+// 4) Not Started
+// Average - Create a function that takes a list and returns the average of all the values.
 // Example: average([1,2,3,4]) should return 2.5
 
 
-// 5)
-// Length - Create a function that takes a list and returns the length of the list.
+// 5) CORRECT
+// Length - Create a function that takes a list and returns the length of the list. 
 // Example: length([37,2,1,-9]) should return 4
 // Example: length([]) should return 0
-
+function lengthCount(arrayInput){
+    return arrayInput.length;
+}
+// console.log(lengthCount([37,2,1,-9]))
 
 // 6)
 // Minimum - Create a function that takes a list of numbers and returns the minimum value in the list. If the list is empty, have the function return False.
