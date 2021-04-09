@@ -144,22 +144,47 @@ function lengthCount(arrayInput){
 }
 // console.log(lengthCount([37,2,1,-9]))
 
-// 6)
+// 6) Completed but fix the second half
 // Minimum - Create a function that takes a list of numbers and returns the minimum value in the list. If the list is empty, have the function return False.
 // Example: minimum([37,2,1,-9]) should return -9
 // Example: minimum([]) should return False
 function minimum(arrayInput){
+    var minValue = arrayInput[0];
+    // console.log(arrayInput.length);
     for(i=0; i<arrayInput.length; i++){
-       
+        if(arrayInput[0] = undefined){
+            console.log("False")
+        }
+        else if(arrayInput[i] <= minValue){
+            minValue = arrayInput[i]
+            // console.log(minValue);
+        }
     }
+    return minValue;
 }
+// console.log(minimum([37,2,1,-9]));
+// console.log(minimum([]));
 
-
-// 7)
+// 7) Completed but fix the second half
 // Maximum - Create a function that takes a list and returns the maximum value in the list. If the list is empty, have the function return False.
 // Example: maximum([37,2,1,-9]) should return 37
 // Example: maximum([]) should return False
-
+function maximum(arrayInput){
+    var maxValue = arrayInput[0];
+    // console.log(arrayInput.length);
+    for(i=0; i<arrayInput.length; i++){
+        if(arrayInput[0] = undefined){
+            console.log("False")
+        }
+        else if(arrayInput[i] >= maxValue){
+            maxValue = arrayInput[i]
+            // console.log(minValue);
+        }
+    }
+    return maxValue;
+}
+// console.log(maximum([37,2,1,-9]));
+// console.log(maximum([]));
 
 // 8)
 // Ultimate Analysis - Create a function that takes a list and returns a dictionary that has the sumTotal, average, minimum, maximum and length of the list.
