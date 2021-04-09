@@ -186,10 +186,29 @@ function maximum(arrayInput){
 // console.log(maximum([37,2,1,-9]));
 // console.log(maximum([]));
 
-// 8)
+// 8) Complete
 // Ultimate Analysis - Create a function that takes a list and returns a dictionary that has the sumTotal, average, minimum, maximum and length of the list.
-// Example: ultimate_analysis([37,2,1,-9]) should return {'sumTotal': 31, 'average': 7.75, 'minimum': -9, 'maximum': 37, 'length': 4 }
-
+// Example: ultimate_analysis([37,2,1,-9]) should return {'sumTotal': 31, 'average': 7.75, 'minimum': -9, 'maximum': 37, 'length': 4 } 
+function ultAnalysis(arrayInput){
+    var length = arrayInput.length;
+    var sumTotal = 0;
+    var average;
+    var min = arrayInput[0];
+    var max= arrayInput[0];
+    for(i=0; i<arrayInput.length; i++){
+        sumTotal += arrayInput[i]; // get to know the operations more
+        // console.log(sumTotal)
+        if(arrayInput[i] <= min){
+            min = arrayInput[i];
+        }
+        else if(max >= arrayInput[i]){
+            max >= arrayInput[i]
+        }
+    }
+    average = sumTotal/arrayInput.length; // MUST RETURN A TEMPLATE LITERAL
+    return `Sumtotal: ${sumTotal}, Average ${average}, Minimum: ${min}, Maximum: ${max}, Length: ${length}`
+}
+// console.log(ultAnalysis([37,2,1,-9]))
 
 // 9)
 // Reverse List - Create a function that takes a list and return that list with values reversed. Do this without creating a second list. (This challenge is known to appear during basic technical interviews.)
