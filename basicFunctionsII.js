@@ -210,8 +210,20 @@ function ultAnalysis(arrayInput){
 }
 // console.log(ultAnalysis([37,2,1,-9]))
 
-// 9)
+// 9) Complete!
 // Reverse List - Create a function that takes a list and return that list with values reversed. Do this without creating a second list. (This challenge is known to appear during basic technical interviews.)
 // Example: reverse_list([37,2,1,-9]) should return [-9,1,2,37]
-
-
+function reverseList(arrayInput){
+    for(i=0; i<arrayInput.length/2; i++){
+        var storeFrontValue = arrayInput[i];
+        var storeBackValue = arrayInput[arrayInput. length-1-i]
+        // console.log(storeFrontValue) // checked here to see if it worked, which it did
+        // console.log(storeBackValue)
+        arrayInput[i] = storeBackValue;
+        // console.log(arrayInput[i]) // checked to see if it did swap, which it did
+        arrayInput[arrayInput.length-1-i] = storeFrontValue;
+        // console.log(arrayInput[arrayInput.length-1-i]) // checked to see if it did swap, which it did
+    }
+    return arrayInput; 
+}
+console.log(reverseList([37,2,1,-9]))
